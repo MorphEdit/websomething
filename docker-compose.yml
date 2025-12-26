@@ -1,0 +1,23 @@
+services:
+  web:
+    image: nginx:alpine
+    container_name: khungkhang_web
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./:/usr/share/nginx/html:ro
+      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./docker/nginx/certs:/etc/nginx/certs:ro
+    depends_on:
+      - php
+    restart: unless-stopped
+
+  php:
+    build:
+      context: .
+      dockerfile: docker/php/Dockerfile
+    container_name: khungkhang_php
+    volumes:
+      - ./:/var/www/html
+    restart: unless-stopped

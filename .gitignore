@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Environment & Config
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+
+# SSL Certificates
+certs/*.key
+certs/*.pem
+nginx/certs/*.key
+nginx/certs/*.pem
+
+# Docker
+docker-compose.override.yml
+*.log
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build / Cache
+.sass-cache/
+*.css.map
+dist/
+build/
+
+# Temporary
+tmp/
+temp/
+*.tmp
+
+# Sensitive Files
+config/database.php
+config/production.php
+backup/
+*.sql
+*.sql.gz

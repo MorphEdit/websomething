@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>MorphEdit — เว็บร้านอาหารสั่งผ่าน QR + ชำระเงินออนไลน์</title>
+
+    <!-- SEO -->
+    <meta name="description"
+        content="MorphEdit ระบบเว็บร้านอาหาร สั่งผ่าน QR จัดการเมนู/ออเดอร์/ลูกค้า + ชำระเงินออนไลน์ พร้อมแผงผู้ดูแลและรายงานยอดขาย" />
+    <link rel="canonical" href="https://khungkhang.online/" />
+    <meta name="theme-color" content="#7c5cff" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MorphEdit" />
+    <meta property="og:title" content="MorphEdit — เว็บร้านอาหารสั่งผ่าน QR + ชำระเงินออนไลน์" />
+    <meta property="og:description"
+        content="ระบบเว็บร้านอาหาร สั่งผ่าน QR จัดการเมนู/ออเดอร์/ลูกค้า + ชำระเงินออนไลน์ พร้อมแผงผู้ดูแลและรายงานยอดขาย" />
+    <meta property="og:url" content="https://khungkhang.online/" />
+    <!-- TODO: เปลี่ยนเป็นรูป OG จริง (1200x630) -->
+    <meta property="og:image" content="https://khungkhang.online/assets/img/og-cover.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MorphEdit — เว็บร้านอาหารสั่งผ่าน QR + ชำระเงินออนไลน์" />
+    <meta name="twitter:description"
+        content="ระบบเว็บร้านอาหาร สั่งผ่าน QR จัดการเมนู/ออเดอร์/ลูกค้า + ชำระเงินออนไลน์ พร้อมแผงผู้ดูแลและรายงานยอดขาย" />
+    <meta name="twitter:image" content="https://khungkhang.online/assets/img/og-cover.png" />
+
+    <!-- Favicons (TODO: ใส่ไฟล์จริงใน assets/img/) -->
+    <link rel="icon" href="/assets/img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png" />
+
+    <link rel="preconnect" href="https://unpkg.com" crossorigin />
+    <link rel="stylesheet" href="assets/css/main.css?v=1.1" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+        {
+          "@context":"https://schema.org",
+          "@graph":[
+            {
+              "@type":"Organization",
+              "@id":"https://khungkhang.online/#org",
+              "name":"MorphEdit",
+              "url":"https://khungkhang.online/",
+              "logo":"https://khungkhang.online/assets/img/logo.png",
+              "sameAs":[
+                "https://facebook.com/REPLACE_ME",
+                "https://line.me/ti/p/REPLACE_ME"
+              ],
+              "contactPoint":[
+                {
+                  "@type":"ContactPoint",
+                  "contactType":"sales",
+                  "email":"morphofficialedit@gmail.com",
+                  "availableLanguage":["th"]
+                }
+              ]
+            },
+            {
+              "@type":"WebSite",
+              "@id":"https://khungkhang.online/#website",
+              "url":"https://khungkhang.online/",
+              "name":"MorphEdit",
+              "publisher":{"@id":"https://khungkhang.online/#org"}
+            }
+          ]
+        }
+    </script>
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="topbar__wrap">
+            <div class="topbar__brand">
+                <a href="#" class="topbar__logo">MorphEdit</a>
+            </div>
+
+            <input class="topbar__toggle" type="checkbox" id="topbarToggle" aria-hidden="true" />
+
+            <label class="topbar__burger" for="topbarToggle" aria-label="Open menu">
+                <span></span>
+            </label>
+
+            <nav class="topbar__nav" aria-label="Primary">
+                <a class="topbar__link is-active" href="#">หน้าแรก</a>
+                <a class="topbar__link" href="#features">ฟีเจอร์</a>
+                <a class="topbar__link" href="#pricing">แพ็กเกจ</a>
+                <a class="topbar__link" href="#faq">คำถามที่พบบ่อย</a>
+                <a class="topbar__link" href="#contact">ติดต่อ</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero__inner">
+            <h1 class="hero__title">MorphEdit</h1>
+
+            <p class="hero__subtitle">
+                ระบบเว็บสำหรับร้านอาหาร<br />
+                จัดการเมนู ออเดอร์ และลูกค้า ได้ง่ายในที่เดียว
+            </p>
+
+            <div class="hero__actions">
+                <a href="#contact" class="hero__btn hero__btn--primary">ติดต่อเรา</a>
+                <a href="#features" class="hero__btn hero__btn--ghost">เรียนรู้เพิ่มเติม</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="features">
+        <div class="section__head" data-aos="fade-up">
+            <h2 class="section__title">FEATURE</h2>
+            <p class="section__desc">ระบบที่ครบครัน พร้อมใช้งานทันทีสำหรับร้านอาหาร</p>
+        </div>
+
+        <div class="feature-split">
+            <div class="feature-split__media" data-aos="fade-right" data-aos-duration="750">
+                <div class="mock mock--wide">
+                    <div class="mock__bar">
+                        <span class="mock__dot"></span>
+                        <span class="mock__dot"></span>
+                        <span class="mock__dot"></span>
+                    </div>
+                    <div class="mock__body">
+                        <div class="mock__hero">Customer QR Menu + Order</div>
+                        <div class="mock__grid">
+                            <div class="mock__card">เมนู / หมวดหมู่</div>
+                            <div class="mock__card">ตัวเลือก / ท็อปปิ้ง</div>
+                            <div class="mock__card">ตะกร้า / ชำระเงิน</div>
+                            <div class="mock__card">ติดตามสถานะ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-split__text" data-aos="fade-left" data-aos-duration="750">
+                <h3 class="feature-split__title">UI สวย ใช้งานง่าย</h3>
+                <p class="feature-split__desc">
+                    ลูกค้าสแกน QR แล้วสั่งได้ทันที รองรับมือถือ 100%<br />
+                    พร้อมชำระเงินออนไลน์ และติดตามสถานะออเดอร์แบบเรียลไทม์
+                </p>
+            </div>
+        </div>
+
+        <div class="feature-split feature-split--reverse">
+            <div class="feature-split__media" data-aos="fade-left" data-aos-duration="750">
+                <div class="mock mock--tall">
+                    <div class="mock__body">
+                        <div class="mock__hero">Admin Panel</div>
+                        <div class="mock__list">
+                            <div class="mock__item">จัดการเมนู / ราคา / รูป</div>
+                            <div class="mock__item">QR ต่อโต๊ะ / โซน</div>
+                            <div class="mock__item">ออเดอร์ / สถานะครัว</div>
+                            <div class="mock__item">โปรโมชัน / คูปอง</div>
+                            <div class="mock__item">รายงานยอดขาย</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-split__text" data-aos="fade-right" data-aos-duration="750">
+                <h3 class="feature-split__title">Panel Admin Friendly</h3>
+                <p class="feature-split__desc">
+                    จัดการร้านได้ครบในหน้าเดียว ตั้งค่าเมนู โต๊ะ QR โปรโมชัน<br />
+                    และดูรายงานยอดขาย/เมนูขายดีได้ทันที
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="modules">
+        <div class="tabs" data-aos="fade-up">
+            <div class="tabs__switch">
+                <button class="tabs__btn is-active" type="button" data-tab="store">Store</button>
+                <button class="tabs__btn" type="button" data-tab="panel">Panel</button>
+            </div>
+
+            <div class="tabs__panes">
+                <div class="tabs__pane is-active" data-pane="store">
+                    <div class="cards">
+                        <div class="card" data-aos="fade-up" data-aos-delay="0">
+                            <h4 class="card__title">QR Menu & Ordering</h4>
+                            <ul class="card__list">
+                                <li>สแกน QR ต่อโต๊ะ/โซน</li>
+                                <li>เมนูหมวดหมู่ + ค้นหา</li>
+                                <li>ตัวเลือก/ท็อปปิ้ง + หมายเหตุ</li>
+                                <li>ติดตามสถานะออเดอร์</li>
+                            </ul>
+                        </div>
+
+                        <div class="card" data-aos="fade-up" data-aos-delay="100">
+                            <h4 class="card__title">Online Payment</h4>
+                            <ul class="card__list">
+                                <li>PromptPay QR / โอน</li>
+                                <li>ชำระเงินก่อน/หลังเสิร์ฟ</li>
+                                <li>บันทึกสถานะการชำระเงิน</li>
+                                <li>ใบเสร็จ/สรุปบิล</li>
+                            </ul>
+                        </div>
+
+                        <div class="card" data-aos="fade-up" data-aos-delay="200">
+                            <h4 class="card__title">Customer Experience</h4>
+                            <ul class="card__list">
+                                <li>Responsive ทุกอุปกรณ์</li>
+                                <li>โหลดไว ใช้งานลื่น</li>
+                                <li>เรียกพนักงาน / ขอเช็คบิล</li>
+                                <li>PWA (เพิ่มหน้าจอได้)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tabs__pane" data-pane="panel">
+                    <div class="cards">
+                        <div class="card" data-aos="fade-up" data-aos-delay="0">
+                            <h4 class="card__title">Menu Management</h4>
+                            <ul class="card__list">
+                                <li>จัดการเมนู/หมวดหมู่/รูป</li>
+                                <li>ตั้งขายดี/แนะนำ/โปร</li>
+                                <li>ปิดขายชั่วคราว (Sold out)</li>
+                                <li>Option Groups / Add-ons</li>
+                            </ul>
+                        </div>
+
+                        <div class="card" data-aos="fade-up" data-aos-delay="100">
+                            <h4 class="card__title">Kitchen + Order Flow</h4>
+                            <ul class="card__list">
+                                <li>ออเดอร์เรียลไทม์</li>
+                                <li>สถานะ: รับงาน/ทำ/เสร็จ</li>
+                                <li>แยกครัว/บาร์ (ต่อยอด)</li>
+                                <li>แจ้งเตือนออเดอร์ใหม่</li>
+                            </ul>
+                        </div>
+
+                        <div class="card" data-aos="fade-up" data-aos-delay="200">
+                            <h4 class="card__title">Reports</h4>
+                            <ul class="card__list">
+                                <li>ยอดขายรายวัน/เดือน</li>
+                                <li>เมนูขายดี</li>
+                                <li>ช่วงเวลาพีค</li>
+                                <li>ยอดเฉลี่ยต่อบิล</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="pricing">
+        <div class="section__head" data-aos="fade-up">
+            <h2 class="section__title">Package</h2>
+            <p class="section__desc">เลือกได้ทั้งรายเดือน หรือขายขาดติดตั้ง</p>
+        </div>
+
+        <div class="billing" data-aos="fade-up" data-aos-delay="80">
+            <button class="billing__btn is-active" type="button" data-bill="monthly">รายเดือน</button>
+            <button class="billing__btn" type="button" data-bill="lifetime">ขายขาด</button>
+        </div>
+
+        <div class="pricing">
+            <div class="price price--popular" data-plan="basic" data-aos="fade-up" data-aos-delay="0">
+                <div class="price__badge">POPULAR</div>
+                <h3 class="price__name">Basic</h3>
+                <p class="price__hint">เหมาะกับร้านเริ่มต้น</p>
+
+                <div class="price__money" data-monthly>
+                    <span class="price__amount">฿699</span><span class="price__unit">/เดือน</span>
+                </div>
+                <div class="price__money" data-lifetime hidden>
+                    <span class="price__amount">฿19,900</span><span class="price__unit">/ครั้ง</span>
+                </div>
+
+                <ul class="price__list">
+                    <li>QR เมนู + สั่งอาหาร</li>
+                    <li>Online Payment (PromptPay)</li>
+                    <li>จัดการเมนู + โต๊ะ/โซน</li>
+                    <li>รายงานพื้นฐาน</li>
+                </ul>
+
+                <a class="price__cta" href="#contact">เริ่มใช้งาน</a>
+            </div>
+
+            <div class="price" data-plan="pro" data-aos="fade-up" data-aos-delay="120">
+                <h3 class="price__name">Pro</h3>
+                <p class="price__hint">ครบขึ้น เหมาะกับร้านจริงจัง</p>
+
+                <div class="price__money" data-monthly>
+                    <span class="price__amount">฿1,490</span><span class="price__unit">/เดือน</span>
+                </div>
+                <div class="price__money" data-lifetime hidden>
+                    <span class="price__amount">฿39,900</span><span class="price__unit">/ครั้ง</span>
+                </div>
+
+                <ul class="price__list">
+                    <li>ทุกอย่างใน Basic</li>
+                    <li>ครัว/KDS + สถานะออเดอร์</li>
+                    <li>โปรโมชัน/คูปอง</li>
+                    <li>สิทธิ์พนักงาน (ต่อยอด)</li>
+                </ul>
+
+                <a class="price__cta price__cta--ghost" href="#contact">ติดต่อเรา</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="faq">
+        <div class="section__head" data-aos="fade-up">
+            <h2 class="section__title">FAQ</h2>
+            <p class="section__desc">คำถามที่พบบ่อยก่อนเริ่มใช้งาน</p>
+        </div>
+
+        <div class="faq" data-aos="fade-up" data-aos-delay="80">
+            <details class="faq__item" open>
+                <summary class="faq__q">ต้องมีแอปไหม หรือเปิดจากมือถือได้เลย?</summary>
+                <div class="faq__a">
+                    เปิดจากมือถือได้เลยผ่าน Browser โดยสแกน QR (รองรับ Responsive) และสามารถต่อยอดทำ PWA
+                    เพิ่มลงหน้าจอได้
+                </div>
+            </details>
+
+            <details class="faq__item">
+                <summary class="faq__q">รับชำระเงินออนไลน์ได้แบบไหน?</summary>
+                <div class="faq__a">
+                    รองรับ PromptPay QR/โอนเป็นหลัก (และสามารถต่อยอดเกตเวย์อื่น ๆ ได้ตามความต้องการ)
+                </div>
+            </details>
+
+            <details class="faq__item">
+                <summary class="faq__q">ถ้าร้านมีหลายโต๊ะ/หลายโซน ทำ QR ยังไง?</summary>
+                <div class="faq__a">
+                    สามารถทำ QR แยก “โต๊ะ/โซน” ได้ เพื่อรู้ว่ามาจากโต๊ะไหน และจัดการออเดอร์ได้ง่าย
+                </div>
+            </details>
+
+            <details class="faq__item">
+                <summary class="faq__q">ติดตั้งนานไหม และต้องมีเซิร์ฟเวอร์เองไหม?</summary>
+                <div class="faq__a">
+                    ติดตั้งได้ทั้งแบบรายเดือน (ดูแลให้) หรือขายขาด (ติดตั้งครั้งเดียว) — เลือกได้ตามงบและสเกลร้าน
+                </div>
+            </details>
+
+            <details class="faq__item">
+                <summary class="faq__q">มีหลังบ้าน/แอดมินอะไรบ้าง?</summary>
+                <div class="faq__a">
+                    เมนู/ราคา/รูป, โต๊ะ/โซน, สถานะออเดอร์, โปรโมชัน, รายงานยอดขาย และสามารถต่อยอดสิทธิ์พนักงานได้
+                </div>
+            </details>
+        </div>
+    </section>
+
+    <section class="cta" id="contact" data-aos="zoom-in" data-aos-duration="800">
+        <div class="cta__inner">
+            <h2 class="cta__title">มาเริ่มต้นกันเลย</h2>
+            <p class="cta__desc">พร้อมให้ร้านของคุณรับออเดอร์ผ่าน QR และชำระเงินออนไลน์</p>
+
+            <div class="cta__actions">
+                <!-- TODO: เปลี่ยนลิงก์ให้เป็นของจริง -->
+                <a class="cta__btn" href="mailto:morphofficialedit@gmail.com" data-contact="email">อีเมล</a>
+                <!-- <a class="cta__btn cta__btn--ghost" href="https://discord.gg/YOUR_INVITE_CODE" target="_blank"
+                    rel="noopener noreferrer" data-contact="discord">Discord</a> -->
+                <!-- <a class="cta__btn cta__btn--ghost" href="https://line.me/ti/p/REPLACE_ME" target="_blank"
+                    rel="noopener noreferrer" data-contact="line">LINE</a>
+                <a class="cta__btn cta__btn--ghost" href="https://facebook.com/REPLACE_ME" target="_blank"
+                    rel="noopener noreferrer" data-contact="facebook">Facebook</a> -->
+            </div>
+
+            <p class="cta__micro">
+                หรือส่งรายละเอียดร้านมาได้เลย: จำนวนโต๊ะ, จำนวนเมนู, ต้องการชำระเงินแบบไหน, ต้องมีระบบครัว/KDS ไหม
+            </p>
+        </div>
+    </section>
+
+    <footer class="footer" data-aos="fade-up">
+        <div class="footer__inner">
+            <div class="footer__brand">
+                <div class="footer__logo">MorphEdit</div>
+                <p class="footer__text">ระบบเว็บร้านอาหาร สั่งผ่าน QR + ชำระเงินออนไลน์</p>
+
+                <div class="footer__links" aria-label="Footer links">
+                    <a class="footer__link" href="/privacy.html">Privacy</a>
+                    <a class="footer__link" href="/terms.html">Terms</a>
+                    <a class="footer__link" href="/sitemap.xml" target="_blank" rel="noopener noreferrer">Sitemap</a>
+                </div>
+
+                <p class="footer__copy">© 2025 MorphEdit. All rights reserved.</p>
+            </div>
+
+            <div class="footer__right">
+                <div class="footer__title">Connect With Us</div>
+
+                <div class="footer__icons">
+                    <!-- TODO: เปลี่ยนลิงก์ให้เป็นของจริง -->
+                    <a class="footer__icon" href="mailto:morphofficialedit@gmail.com" aria-label="Email">✉</a>
+                    <!-- <a class="footer__icon" href="https://discord.gg/YOUR_INVITE_CODE" target="_blank"
+                        rel="noopener noreferrer" aria-label="Discord">D</a> -->
+                    <!-- <a class="footer__icon" href="https://line.me/ti/p/REPLACE_ME" target="_blank"
+                        rel="noopener noreferrer" aria-label="LINE">L</a>
+                    <a class="footer__icon" href="https://facebook.com/REPLACE_ME" target="_blank"
+                        rel="noopener noreferrer" aria-label="Facebook">f</a> -->
+                </div>
+
+                <div class="footer__meta">
+                    <div class="footer__ver">Version: 1.0.0</div>
+                    <div class="footer__small">Domain: khungkhang.online</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script>
+        AOS.init({
+            once: true,
+            offset: 80,
+            duration: 700,
+            easing: "ease-out",
+        });
+
+        gsap.from(".hero__title", { y: 32, opacity: 0, duration: 0.9, ease: "power3.out" });
+        gsap.from(".hero__subtitle", { y: 20, opacity: 0, duration: 0.8, delay: 0.12, ease: "power3.out" });
+        gsap.from(".hero__actions", { y: 14, opacity: 0, duration: 0.7, delay: 0.22, ease: "power3.out" });
+
+        document.querySelectorAll("[data-tab]").forEach((btn) => {
+            btn.addEventListener("click", () => {
+                const tab = btn.getAttribute("data-tab");
+
+                document.querySelectorAll("[data-tab]").forEach((b) => b.classList.remove("is-active"));
+                btn.classList.add("is-active");
+
+                const activePane = document.querySelector('.tabs__pane.is-active');
+                const nextPane = document.querySelector(`[data-pane="${tab}"]`);
+
+                if (activePane === nextPane) return;
+
+                gsap.to(activePane, {
+                    opacity: 0,
+                    y: 8,
+                    duration: 0.18,
+                    ease: "power2.out",
+                    onComplete: () => {
+                        document.querySelectorAll("[data-pane]").forEach((p) => p.classList.remove("is-active"));
+                        nextPane.classList.add("is-active");
+
+                        gsap.fromTo(nextPane, { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" });
+
+                        AOS.refreshHard();
+                    }
+                });
+            });
+        });
+
+        function setBilling(mode) {
+            document.querySelectorAll("[data-bill]").forEach((b) => b.classList.remove("is-active"));
+            document.querySelector(`[data-bill="${mode}"]`).classList.add("is-active");
+
+            const monthlyEls = document.querySelectorAll("[data-monthly]");
+            const lifetimeEls = document.querySelectorAll("[data-lifetime]");
+
+            const show = (els) => els.forEach((el) => (el.hidden = false));
+            const hide = (els) => els.forEach((el) => (el.hidden = true));
+
+            if (mode === "monthly") {
+                show(monthlyEls); hide(lifetimeEls);
+            } else {
+                show(lifetimeEls); hide(monthlyEls);
+            }
+
+            gsap.fromTo(".price__money:not([hidden])", { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" });
+
+            AOS.refreshHard();
+        }
+
+        document.querySelectorAll("[data-bill]").forEach((btn) => {
+            btn.addEventListener("click", () => setBilling(btn.getAttribute("data-bill")));
+        });
+        setBilling("monthly");
+
+        // Close mobile menu after clicking a link
+        document.querySelectorAll(".topbar__nav a").forEach((a) => {
+            a.addEventListener("click", () => {
+                const t = document.getElementById("topbarToggle");
+                if (t) t.checked = false;
+            });
+        });
+    </script>
+</body>
+
+</html>
